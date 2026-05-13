@@ -1,0 +1,156 @@
+"<!DOCTYPE html>
+<html lang=""id"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>bondan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            
+            background-image: url('https://images.unsplash.com/photo-1517783999520-f068d7431a60?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        
+        body::before {
+            content: """";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 0;
+        }
+
+        .login-container {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            width: 380px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: 3px;
+        }
+
+        p {
+            color: #e0f7fa;
+            font-size: 13px;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            color: #ffffff;
+            font-size: 14px;
+            margin-left: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 15px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.8);
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-group input:focus {
+            background: #ffffff;
+            box-shadow: 0 0 15px rgba(0, 183, 255, 0.5);
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 30px;
+            background: #00bcd4; /* Biru es */
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.4s;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background: #e0f7fa;
+            color: #00838f;
+            transform: scale(1.05);
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+
+        .links a {
+            color: #ffffff;
+            font-size: 12px;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        .links a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class=""login-container"">
+    <h2>Login</h2>
+    <p>Silakan masukan data</p>
+    
+    <form action=""#"">
+        <div class=""input-group"">
+            <label>username</label>
+            <input type=""text"" placeholder=""username@arctic.com"" required>
+        </div>
+        
+        <div class=""input-group"">
+            <label>code</label>
+            <input type=""password"" placeholder=""••••••••"" required>
+        </div>
+        
+        <button type=""submit"">send</button>
+    </form>
+    
+    <div class=""links"">
+        <a href=""#"">Lupa Password?</a> | <a href=""#"">Daftar Baru</a>
+    </div>
+</div>
+
+</body>
+</html>
+"
